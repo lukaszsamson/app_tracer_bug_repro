@@ -1,0 +1,7 @@
+defprotocol MyProto do
+  def a(t)
+end
+
+defimpl MyProto, for: Any do
+  def a(_t), do: nil
+end
